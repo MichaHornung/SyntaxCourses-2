@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		A50D6F8F29378D390003E416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50D6F8E29378D390003E416 /* AppDelegate.swift */; };
 		A50D6F9129378D390003E416 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50D6F9029378D390003E416 /* SceneDelegate.swift */; };
-		A50D6F9329378D390003E416 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50D6F9229378D390003E416 /* ViewController.swift */; };
 		A50D6F9629378D390003E416 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50D6F9429378D390003E416 /* Main.storyboard */; };
 		A50D6F9929378D390003E416 /* SyntaxCourses.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A50D6F9729378D390003E416 /* SyntaxCourses.xcdatamodeld */; };
 		A50D6F9B29378D3A0003E416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50D6F9A29378D3A0003E416 /* Assets.xcassets */; };
 		A50D6F9E29378D3A0003E416 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50D6F9C29378D3A0003E416 /* LaunchScreen.storyboard */; };
+		A50D6FA929378EE10003E416 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50D6FA729378EE10003E416 /* DetailsViewController.swift */; };
+		A50D6FAA29378EE10003E416 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50D6FA829378EE10003E416 /* ContactsViewController.swift */; };
+		A50D6FAD2937901B0003E416 /* Course+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50D6FAB2937901B0003E416 /* Course+CoreDataClass.swift */; };
+		A50D6FAE2937901B0003E416 /* Course+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50D6FAC2937901B0003E416 /* Course+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A50D6F8B29378D390003E416 /* SyntaxCourses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SyntaxCourses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50D6F8E29378D390003E416 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A50D6F9029378D390003E416 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A50D6F9229378D390003E416 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A50D6F9529378D390003E416 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A50D6F9829378D390003E416 /* SyntaxCourses.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SyntaxCourses.xcdatamodel; sourceTree = "<group>"; };
 		A50D6F9A29378D3A0003E416 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A50D6F9D29378D3A0003E416 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A50D6F9F29378D3A0003E416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A50D6FA729378EE10003E416 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		A50D6FA829378EE10003E416 /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		A50D6FAB2937901B0003E416 /* Course+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Course+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A50D6FAC2937901B0003E416 /* Course+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Course+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +64,10 @@
 		A50D6F8D29378D390003E416 /* SyntaxCourses */ = {
 			isa = PBXGroup;
 			children = (
+				A50D6FA629378D4A0003E416 /* Models */,
+				A50D6FA529378D410003E416 /* Controllers */,
 				A50D6F8E29378D390003E416 /* AppDelegate.swift */,
 				A50D6F9029378D390003E416 /* SceneDelegate.swift */,
-				A50D6F9229378D390003E416 /* ViewController.swift */,
 				A50D6F9429378D390003E416 /* Main.storyboard */,
 				A50D6F9A29378D3A0003E416 /* Assets.xcassets */,
 				A50D6F9C29378D3A0003E416 /* LaunchScreen.storyboard */,
@@ -68,6 +75,24 @@
 				A50D6F9729378D390003E416 /* SyntaxCourses.xcdatamodeld */,
 			);
 			path = SyntaxCourses;
+			sourceTree = "<group>";
+		};
+		A50D6FA529378D410003E416 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A50D6FA829378EE10003E416 /* ContactsViewController.swift */,
+				A50D6FA729378EE10003E416 /* DetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A50D6FA629378D4A0003E416 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A50D6FAB2937901B0003E416 /* Course+CoreDataClass.swift */,
+				A50D6FAC2937901B0003E416 /* Course+CoreDataProperties.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A50D6F9329378D390003E416 /* ViewController.swift in Sources */,
+				A50D6FAE2937901B0003E416 /* Course+CoreDataProperties.swift in Sources */,
+				A50D6FAD2937901B0003E416 /* Course+CoreDataClass.swift in Sources */,
 				A50D6F9929378D390003E416 /* SyntaxCourses.xcdatamodeld in Sources */,
 				A50D6F8F29378D390003E416 /* AppDelegate.swift in Sources */,
 				A50D6F9129378D390003E416 /* SceneDelegate.swift in Sources */,
+				A50D6FA929378EE10003E416 /* DetailsViewController.swift in Sources */,
+				A50D6FAA29378EE10003E416 /* ContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
